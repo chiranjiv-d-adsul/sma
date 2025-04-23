@@ -5,3 +5,15 @@ sudo apt install wine -y
 wine DumpIt.exe
 volatility -f memory.raw imageinfo
 volatility -f memory.raw --profile=Win7SP1x64 pslist
+
+
+✅ Summary of Commands (copy/paste-friendly)
+powershell
+Copy
+Edit
+cd "C:\Path\To\DumpIt"
+.\DumpIt.exe
+
+cd "C:\Forensics\volatility"
+python volatility.py -f ..\memory.raw imageinfo
+python volatility.py -f ..\memory.raw --profile=Win7SP1x64 pslist
