@@ -1,0 +1,7 @@
+In windows
+
+sudo apt update
+sudo apt install wine -y
+wine DumpIt.exe
+volatility -f memory.raw imageinfo
+volatility -f memory.raw --profile=Win7SP1x64 pslist
