@@ -1,0 +1,16 @@
+Explore forensics tools in kali Linux for acquiring, analyzing and duplicating 
+data. ( DD & DCFLDD ) 
+   The dd tool is used to copy bits from one file to another. Copying bits in this manner is the 
+basis for all forensic duplication tools
+  DD in general is a data management tool and was not particularly built for forensics 
+purposes. Therefore it has its shortcomings. 
+  command for kali linux
+
+  fdisk -l
+  Duplicating data and generating hash using dd 
+if=/dev/sdc1 bs=2048 | md5sum   Saving it to file
+if=/dev/sdc1 bs=2048 of =EvidenceDD | md5sum 
+  if=/dev/sdc1 bs=2048 of =EvidenceDCFLDD | md5sum 
+
+  PERFORMED FORENSIC DUPLICATION
+  
